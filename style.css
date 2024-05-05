@@ -1,0 +1,695 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    max-width: 1519.2px;
+    height: 56px;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar__wrapper {
+    display: flex;
+    align-items: center;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__leftt > img{
+    width: 92.64px;
+    height: 30px;
+}
+
+.navbar__list {
+    margin-left: 34px;
+    display: flex;
+    gap: 16px;
+}
+
+.item__link {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #242424;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.item__link:after {
+    content: "";
+    position: absolute;
+    background-color: #067A46;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .4s;
+}
+
+.item__link:hover::after {
+    width: 100%;
+}
+
+.item__link:hover {
+    color: #067A46;
+}
+
+.navbar__login {
+    margin-left: 579.64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 1px #067A46 inset;
+    background: #FFFFFF01;
+    color: #067A46;
+}
+
+.navbar__login:hover {
+    background-color: #067A46;
+    color: #E4E4E4;
+}
+
+.hero {
+    width: 1519.2px;
+    height: 650px;
+    background: url(./images/hero\ background.jpg) no-repeat;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 181px 467px;
+}
+
+.hero__content {
+    max-width: 585px;
+    height: 288px;
+}
+
+.hero__title {
+    width: 296px;
+    height: 96px;
+    font-family: Verdana;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #000000;
+}
+
+.hero__text {
+    margin-top: 39.2px;
+    color: #343434;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 32.8px;
+}
+
+.hero__link {
+    width: 148.38px;
+    height: 48px;
+    padding: 11.6px 23.38px 12.4px 24px;
+    border-radius: 4px;
+    background: #067A46;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.hero__link:hover {
+    background-color: #FFFFFF;
+    color: #067A46;
+    border: 1px solid #067A46;
+}
+
+.hero__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 12px 0px 0px 0px;
+    border-radius: 25px;
+    border: 0.5px solid #067A46;
+}
+
+.hero__btn > i {
+    font-size: 26px;
+    padding: 8.98px 3.66px 6.73px 3.39px;
+}
+
+.why {
+    max-width: 1519.2px;
+    height: 479.2px;
+    background: #F8F8F8;
+}
+
+.why__wrapper {
+    padding-top: 39.4px;
+    padding-bottom: 41px;
+}
+
+.why__title {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    color: #242424;
+}
+
+.why__cards {
+    max-width: 1170px;
+    min-height: 258.2px;
+    margin-top: 30.6px;
+    margin-left: 174.6px;
+    margin-bottom: 24px;
+}
+
+.why__cards__wrapper {
+    padding: 0 15px;
+    gap: 30px;
+    display: flex;
+}
+
+.why__card {
+    width: 262.5px;
+    min-height: 258.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why__card > img {
+    padding-top: 30px;
+}
+
+.why__card > strong {
+    margin-top: 28.8px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #242424;
+}
+
+.why__card > p {
+    margin-top: 13px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.why__link {
+    width: 123.88px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 11.6px 23.88px 12.4px 24px;
+    box-shadow: 0px 0px 0px 1px #067A46 inset;
+    background: #FFFFFF01;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #067A46;
+    margin-left: 697.66px;
+}
+
+.why__link:hover {
+    color: #FFFFFF;
+    background-color: #067A46;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1519.2px;
+    height: 439px;
+}
+
+.box__wrapper {
+    display: flex;
+    width: 1170px;
+    height: 398px;
+}
+
+.box__image {
+    width: 555px;
+    height: 350.79px;
+    padding-left: 15px;
+    padding-top: 22px;
+}
+
+.box__content {
+    margin-left: 112.5px;
+    padding-top: 20px;
+}
+
+.box__content__wrapper {
+    gap: 32px;
+    width: 487.5px;
+    height: 358px;
+}
+
+.box__content__text {
+    padding: 15px;
+    width: 457.5px;
+    height: 263px;
+}
+
+.box__content__title {
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #242424;
+}
+
+.box__content__list {
+    font-family: Segoe UI Symbol;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #242424;
+}
+
+.box__item__link {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #067A46;
+    text-decoration: underline;
+}
+
+.box__link {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 32px;
+    max-width: 457.5px;
+    height: 48px;
+    border-radius: 4px;
+    background: #067A46;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.box__link:hover {
+    background-color: #FFFFFF;
+    color: #067A46;
+    border: 1px solid #067A46;
+}
+
+.recipes {
+    max-width: 1519.2px;
+    height: 568.2px;
+}
+
+.recipes__wrapper {
+    padding-top: 29.4px;
+}
+
+.recipes__title {
+    font-family: Inter;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: center;
+    color: #242424;
+}
+
+.recipes__text {
+    margin-top: 5.6px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #242424;
+}
+
+.recipes__images__wrapper {
+    margin-left: 189.6px;
+    max-width: 1120px;
+    height: 362.2px;
+}
+
+.recipes__images {
+    padding: 22px 56px;
+}
+
+.recipes__link {
+    display: block;
+    margin-left: 680.98px;
+    max-width: 157.25px;
+    margin-top: 24px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF01;
+    box-shadow: 0px 0px 0px 1px #067A46 inset;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #067A46;
+}
+
+.recipes__link:hover {
+    color: #FFFFFF;
+    background-color: #067A46;
+}
+
+.cuisine {
+    max-width: 1519.2px;
+    height: 761.5px;
+    text-align: center;
+}
+
+.cuisine__title {
+    padding-top: 39.4px;
+    font-family: Inter;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #242424;
+    margin-bottom: 30.6px;
+}
+
+.cuisine__link {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #242424;
+}
+
+.cuisine__cards {
+    margin-left: 174.6px;
+    margin-top: 30px;
+    max-width: 1170px;
+    height: 575.5px;
+    padding: 0px 15px;
+    gap: 30px;
+    display: flex;
+}
+
+.cuisine__card {
+    padding-top: 30px;
+    max-width: 262.5px;
+    height: 562.5px;
+}
+
+.cuisine__card__img {
+    width: 262.5px;
+    height: 328.3px;
+}
+
+.cuisine__card__title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #242424;
+    margin-top: 28px;
+}
+
+.cuisine__card__text {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #242424;
+    margin-top: 11.4px;
+}
+
+.plans {
+    background-image: url(./images/plans\ image.png);
+    max-width: 1519.2px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans__wrapper {
+    width: 585px;
+    height: 280px;
+}
+
+.plans__title {
+    font-family: Verdana;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.plans__text {
+    margin-top: 39.8px;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 32.8px;
+}
+
+.plans__link {
+    margin-left: 218.31px;
+    margin-top: 32.8px;
+    width: 148.38px;
+    height: 48px;
+    padding: 11.6px 23.38px 12.4px 24px;
+    border-radius: 4px;
+    background: #067A46;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.plans__link:hover {
+    background-color: #FFFFFF;
+    color: #067A46;
+    border: 1px solid #067A46;
+}
+
+.questions {
+    max-width: 1519.2px;
+    height: 776px;
+    padding: 16px;
+}
+
+.questions__wrapper {
+    text-align: center;
+    width: 960px;
+    height: 744px;
+    margin-left: 263.6px;
+}
+
+.questions__title {
+    padding-top: 16px;
+    font-family: Verdana;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #242424;
+}
+
+.questions__list {
+    max-width: 960px;
+    padding: 8px;
+    height: 664px;
+}
+
+.questions__list__item {
+    max-width: 944px;
+    height: 72px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #242424;
+}
+
+.questions__btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: transparent;
+    border: 0px;
+}
+
+.footer {
+    max-width: 1519.2px;
+    height: 387px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    padding-top: 49px;
+}
+
+.footer__content {
+    width: 1150px;
+    height: 209.6px;
+    display: flex;
+}
+
+.footer__col {
+    width: 201.25px;
+    height: 209.6px;
+}
+
+.footer__col__title {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #242424;
+}
+
+.footer__col__list {
+    margin-top: 12.4px;
+}
+
+.footer__col__item > a{
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #067A46;
+    text-transform: capitalize;
+}
+
+.footer__col__item > a:hover {
+    color: rgb(88, 88, 174);
+}
+
+.footer__col__extra {
+    width: 345px;
+    height: 117.2px;
+}
+
+.footer__col__item__extra > a {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    text-align: left;
+    color: #242424;
+}
+
+.footer__link {
+    padding-left: 184.6px;
+    margin-top: 48px;
+    min-width: 1519.2px;
+    height: 80.4px;
+    border: 1px solid #E4E4E4;
+    display: flex;
+    align-items: center;
+}
+
+.footer__link__wrapper {
+    display: flex;
+    max-width: 1150px;
+}
+
+.footer__link__main {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #242424;
+}
+
+.footer__link__extra {
+    margin-left: 64.39px;
+    width: 744.61px;
+    height: 20.8px;
+    display: flex;
+    gap: 0 24px;
+}
+
+.footer__link__extra__list__item {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #067A46;
+}
+
+.footer__link__extra__list__item:hover {
+    color: rgb(88, 88, 174);
+}
+
+.footer__link__web {
+    max-width: 161px;
+    height: 31.4px;
+    padding: 0px 21.5px 6.4px 21.5px;
+    gap: 21.5px;
+    display: flex;
+}
+
+.footer__link__web img:hover {
+    width: 110%;
+    height: 110%;
+}
